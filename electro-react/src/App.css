@@ -1,0 +1,43 @@
+.version {
+  position: absolute;
+  font-size: 0.8rem;
+  right: 0.5rem;
+  top: 0.5rem;
+  z-index: 1;
+}
+
+.environment {
+  font-size: .8rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 1;
+  background: var(--primary);
+  color: white;
+  padding: 1px 6px;
+  border-radius: 8px;
+}
+
+.error_para,
+.info_para,
+.success_para {
+  height: 3rem;
+  background: #ff4251;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.info_para {
+  background: var(--primary);
+}
+
+.success_para {
+  background: var(--success);
+}

@@ -1,0 +1,41 @@
+{
+  "name": "mdm-activity-tracker",
+  "version": "1.0.2",
+  "description": "MDM system activity tracker",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron --trace-warnings .",
+    "watch": "npx electronmon --trace-warnings .",
+    "dist": "electron-builder"
+  },
+  "author": "MDM",
+  "license": "ISC",
+  "dependencies": {
+    "@paymoapp/electron-shutdown-handler": "^1.0.15",
+    "auto-launch": "^5.0.6",
+    "electron-store": "^8.1.0",
+    "electron-updater": "^6.1.7",
+    "is-reachable": "^5.2.1",
+    "mqtt": "^5.3.3",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Quokka-Labs-LLP/edique-mdm-artifact-windows"
+  },
+  "build": {
+    "appId": "com.mdm-electron.app",
+    "productName": "MDM App",
+    "win": {
+      "icon": "src/logo_large.png",
+      "target": "nsis"
+    },
+    "nsis": {
+      "deleteAppDataOnUninstall": true
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.qr_code_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qr_code_div {
+    gap: 1rem;
+}
+
+.qr_code_div img {
+    width: 12rem;
+    border: 1px solid #d8d8d8;
+    border-radius: 0.5rem;
+}
+
+.loading {
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid #d8d8d8;
+    border-radius: 0.5rem;
+}
+
+.qr_code_div h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.button {
+    all: unset;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    width: 7rem;
+    text-align: center;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    background-color: lightgray;
+}

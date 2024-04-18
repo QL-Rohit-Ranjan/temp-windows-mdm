@@ -1,0 +1,48 @@
+.registered_div {
+  padding: 0.8rem;
+}
+
+.status {
+  margin-top: 2rem;
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-bottom: 2px;
+}
+
+.status:first-child {
+  margin-top: 3rem;
+}
+
+.status:last-child {
+  border: none;
+}
+
+.title {
+  font-weight: 600;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+ul>li {
+  list-style-type: none;
+}
+
+ul>li>span {
+  font-weight: 500;
+}
+
+.img {
+  height: 23px;
+  width: 23px;
+}
+
+.power_button:hover {
+  filter: invert(19%) sepia(100%) saturate(3800%) hue-rotate(0deg) brightness(98%) contrast(111%);
+}
